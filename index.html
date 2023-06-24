@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> My Dynamic Multiplication Table </title>
+    <link rel="stylesheet" href="css/dynamicTable.css">
+    
+<!--
+File: homework4 (Part 1).html
+GUI Assignment: Using the jQuery Validation Plugin.
+Christian Kayego, UMass Lowell Computer Science, christian_kayego@student.uml.edu
+For this is assignment, we are to use the assignment 3 that we created and use the jQuery validation plugin to
+validate all data entered by the user. In case of errors, they are to be handled precisely, clear to the user as
+to where the errors are and how to correct them, and also prevent the page from reloading.
+Copyright (c) 2023 by Christian Kayego. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by Christian Kayego on June 19, 2023 at 4:30 pm
+Sources used: https://www.w3schools.com/, https://www.youtube.com/watch?v=UB1O30fR-EE, https://stackoverflow.com/
+-->
+  </head>
+
+  <body>
+    <h1>My Dynamic Multiplication Table</h1>
+
+    <!-- Form to allow user to enter the numbers -->
+    <form id="inputForm">
+      <label for="startMultiplier">Start Multiplier:</label>
+      <input type="number" id="startMultiplier" required>
+
+      <label for="endMultiplier">End Multiplier:</label>
+      <input type="number" id="endMultiplier" required>
+
+      <label for="startMultiplicand">Start Multiplicand:</label>
+      <input type="number" id="startMultiplicand" required>
+
+      <label for="endMultiplicand">End Multiplicand:</label>
+      <input type="number" id="endMultiplicand" required>
+
+      <button type="submit">Generate Table</button>
+    </form>
+
+    <div id="tableContainer">
+      <p id="loadingMessage"></p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="js/dynamicTable.js"></script>
+  </body>
+</html>

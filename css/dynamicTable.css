@@ -1,0 +1,112 @@
+/*
+File: homework4 (Part 1).css
+GUI Assignment: Using the jQuery Validation Plugin.
+Christian Kayego, UMass Lowell Computer Science, christian_kayego@student.uml.edu
+For this is assignment, we are to use the assignment 3 that we created and use the jQuery validation plugin to
+validate all data entered by the user. In case of errors, they are to be handled precisely, clear to the user as
+to where the errors are and how to correct them, and also prevent the page from reloading.
+Copyright (c) 2023 by Christian Kayego. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by Christian Kayego on June 19, 2023 at 4:30 pm
+Sources used: https://www.w3schools.com/, https://www.youtube.com/watch?v=UB1O30fR-EE, https://stackoverflow.com/
+*/
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f3f3f3;
+}
+
+h1 {
+    text-align: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="number"] {
+    width: 60px;
+}
+
+button {
+    display: block;
+    margin-top: 20px;
+}
+
+#tableContainer {
+    max-width: 100%;
+    overflow-x: auto; /* this is to hadnle the case that the table container
+                         deals with horizontal overflow. Scrollbar will appear in 
+                         such a case */
+    margin: 0 auto;                      
+    margin-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th,
+  td {
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    position: sticky;
+    top: 0;
+    z-index: 1;  }
+  
+  td {
+    border: 1px solid #ddd;
+  }
+
+  /* Style the table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  /* Style the table header */
+  th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Style the table cells */
+  td {
+    padding: 8px;
+    text-align: center;
+  }
+  
+  /* Style the table cells in odd-numbered rows */
+  tr:nth-child(odd) td {
+    background-color: #f9f9f9;
+  }
+  
+  /* Style the first column cells */
+  td:first-child {
+    font-weight: bold;
+  }
+  
+  /* Add a hover effect to table cells */
+  td:hover {
+    background-color: #f5f5f5;
+  }
+
+  
